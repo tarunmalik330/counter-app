@@ -9,7 +9,7 @@ add.addEventListener('click', () => {
 });
 save.addEventListener("click", function () {
     if (addnumber.innerHTML == 0) {
-        savetext.classList.replace("save");
+        savetext.classList.remove("save");
     } else {
         if (save.innerHTML == 0) {
             save.innerHTML = number.innerHTML;
