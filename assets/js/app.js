@@ -2,6 +2,7 @@ const addnumber = document.querySelector('#addnumber')
 const add = document.querySelector('#add')
 const save = document.querySelector('#save')
 const savetext = document.querySelector('#savetext')
+const reset = document.querySelector('#reset')
 add.addEventListener('click', () => {
     addnumber.innerHTML = +addnumber.innerHTML + 1;
     savetext.classList.remove("disable");
@@ -18,3 +19,7 @@ save.addEventListener("click", function () {
         addnumber.innerHTML = 0;
     }
 });
+// reset.addEventListener('click', function () {
+//     addnumber.innerHTML = 0
+//     savetext.innerHTML = 0
+// })
