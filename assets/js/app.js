@@ -1,20 +1,19 @@
 const addnumber = document.querySelector('#addnumber')
-let curValue = 0;
 const add = document.querySelector('#add')
 const save = document.querySelector('#save')
 const savetext = document.querySelector('#savetext')
 add.addEventListener('click', () => {
-    curValue++;
-    addnumber.textContent = curValue;
+    addnumber.innerHTML = +addnumber.innerHTML + 1;
+    savetext.classList.remove("disable");
 });
 save.addEventListener("click", function () {
     if (addnumber.innerHTML == 0) {
-        savetext.classList.remove("save");
+        savetext.classList.add("disable");
     } else {
-        if (save.innerHTML == 0) {
-            save.innerHTML = number.innerHTML;
+        if (savetext.innerHTML == 0) {
+            savetext.innerHTML = addnumber.innerHTML;
         } else {
-            savetext.innerHTML += " , " + addnumber.innerHTML;
+            savetext.innerHTML = savetext.innerHTML + " , " + addnumber.innerHTML;
         }
         addnumber.innerHTML = 0;
     }

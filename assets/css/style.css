@@ -34,6 +34,9 @@
 .text_grey {
   color: #808080;
 }
+.disable {
+  cursor: not-allowed;
+}
 .button {
   padding: 13px 45px;
   color: #128dff;
