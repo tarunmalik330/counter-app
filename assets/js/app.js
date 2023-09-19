@@ -19,7 +19,7 @@ save.addEventListener("click", function () {
         addnumber.innerHTML = 0;
     }
 });
-// reset.addEventListener('click', function () {
-//     addnumber.innerHTML = 0
-//     savetext.innerHTML = 0
-// })
+reset.addEventListener('click', function () {
+    addnumber.innerHTML = 0
+    savetext.innerHTML = 0
+})
